@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Broadway Repairing Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-ico">🔧</div>
+        <div class="brand-text">
+          <div class="brand-title">Broadway Repairing Shop</div>
+          <div class="brand-sub">Device repairs & diagnostics</div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#news">News</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchBtn" class="icon-btn" aria-label="search">🔎</button>
+        <a href="contact.html" class="icon-btn" aria-label="contact">☎️</a>
+      </div>
+    </div>
+
+    <!-- search bar that opens when searchBtn clicked -->
+    <div id="searchBar" class="search-bar">
+      <input id="searchInput" placeholder="Search services, e.g. 'laptop screen'..." />
+      <button id="closeSearch" class="btn small">Close</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <img class="hero-img" src="https://i.pinimg.com/1200x/25/b0/3f/25b03f98c7170fe6b6e89963ad4da8fe.jpg" alt="technician repairing board" />
+    <div class="hero-content">
+      <h1>Your one-stop shop for device repairs</h1>
+      <p>Specializing in everything from hardware fixes to software issues — we handle it all.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn">Book your repair</a>
+        <a href="#how" class="btn ghost">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services slider -->
+  <section id="services" class="section services-section">
+    <div class="section-head">
+      <h2>Services we offer</h2>
+      <button class="btn small ghost">View all services</button>
+    </div>
+
+    <div class="services-wrap">
+      <button id="srvPrev" class="srv-arrow">◀</button>
+
+      <div class="services-slider" id="servicesSlider">
+        <article class="service-card">
+          <div class="card-imgwrap">
+            <img src="https://i.pinimg.com/736x/19/9b/88/199b88fd92c7b29e2d6eec591c3613a9.jpg" alt="laptop repairs" />
+          </div>
+          <h3>Laptop repairs</h3>
+          <p>Cracked screens, failing battery, unresponsive systems — we fix it all.</p>
+        </article>
+
+        <article class="service-card yellow">
+          <div class="card-imgwrap">
+            <img src="https://i.pinimg.com/736x/ec/17/2f/ec172fa9b65487884444c9a1c24f8f81.jpg" alt="printer repairs" />
+          </div>
+          <h3>Printer repairs</h3>
+          <p>Paper jams, printer head, connectivity, and maintenance service.</p>
+        </article>
+
+        <article class="service-card light">
+          <div class="card-imgwrap">
+            <img src="https://i.pinimg.com/736x/3f/e8/4d/3fe84de7f4dd9a228db166787215eb91.jpg" alt="mobile repairs" />
+          </div>
+          <h3>Mobile device repairs</h3>
+          <p>Screen replacements, charging issues, water damage diagnostics.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="card-imgwrap">
+            <img src="https://i.pinimg.com/1200x/04/56/68/04566800964a3e8d5d2a505beaf23f1b.jpg" alt="other repairs" />
+          </div>
+          <h3>Other devices</h3>
+          <p>Consoles, smart home devices, printers & more — diagnostics & repair.</p>
+        </article>
+      </div>
+
+      <button id="srvNext" class="srv-arrow">▶</button>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section why-section">
+    <div class="why-left">
+      <h2>Why choose us?</h2>
+      <p>We know how important your devices are to you. That’s why we offer fast, affordable, and professional repair services backed by years of experience.</p>
+
+      <ul class="why-list">
+        <li>✅ Certified technicians</li>
+        <li>✅ Quick turnaround</li>
+        <li>✅ Customer satisfaction</li>
+        <li>✅ Affordable pricing</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Know more</a>
+    </div>
+
+    <div class="why-right">
+      <img src="https://i.pinimg.com/1200x/04/56/68/04566800964a3e8d5d2a505beaf23f1b.jpg" alt="technician working" />
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="section how-section">
+    <h2>How it works</h2>
+    <ol class="how-steps">
+      <li><span class="step-num">01</span> <div><strong>Book a repair</strong><p>Select your device and schedule your repair online or call us.</p></div></li>
+      <li><span class="step-num">02</span> <div><strong>Drop off or schedule pickup</strong><p>Bring your device or schedule a pickup from your location.</p></div></li>
+      <li><span class="step-num">03</span> <div><strong>We diagnose & repair</strong><p>Our certified technicians perform a full diagnostic and repair.</p></div></li>
+      <li><span class="step-num">04</span> <div><strong>Get your device back</strong><p>We return the repaired device with warranty & satisfaction guarantee.</p></div></li>
+    </ol>
+    <a class="btn" href="#services">Book a repair now</a>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonials">
+    <h2>What our clients are saying</h2>
+
+    <div class="test-grid">
+      <div class="test-card">
+        <img src="https://i.pinimg.com/736x/6f/f5/95/6ff595e5f4f1c373a88ca01ea85cc267.jpg" alt="client 1" />
+        <p class="quote">"Quick and professional — fixed my laptop screen in a day!"</p>
+        <p class="by">— Ali R.</p>
+      </div>
+
+      <div class="test-card">
+        <img src="https://i.pinimg.com/736x/1e/7b/e9/1e7be9fc2783cc988ed9eda8065d9fe4.jpg" alt="client 2" />
+        <p class="quote">"Great pricing and honest diagnostics. Highly recommend."</p>
+        <p class="by">— Sara K.</p>
+      </div>
+
+      <div class="test-card promo">
+        <div class="promo-inner">
+          <h3>Exclusive discount</h3>
+          <p>20% off your first repair.</p>
+          <a class="btn small" href="contact.html">Get coupon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest news -->
+  <section id="news" class="section news">
+    <h2>Latest news & advice</h2>
+
+    <div class="news-grid">
+      <article class="news-item">
+        <img src="https://i.pinimg.com/1200x/df/a6/99/dfa6996980ad6b30e6daaca7a3322dcf.jpg" alt="news 1">
+        <h4>How to extend laptop battery life</h4>
+        <p>Small steps to improve battery longevity.</p>
+      </article>
+
+      <article class="news-item">
+        <img src="https://i.pinimg.com/736x/54/4a/0e/544a0ec9706bb78f94003480b975ba38.jpg" alt="news 2">
+        <h4>Top 5 causes of phone overheating</h4>
+        <p>What to check and when to bring it in.</p>
+      </article>
+
+      <article class="news-item">
+        <img src="https://i.pinimg.com/1200x/35/e7/02/35e702c95588f07e0091ea3d2f9ee5b3.jpg" alt="news 3">
+        <h4>Printer maintenance tips</h4>
+        <p>Keep your printer working longer with these tips.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Broadway Repairing Shop</h3>
+        <p>Address: 123 Broadway St.<br/>Phone: +92 300 0000000<br/>Email: info@broadwayrepair.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li>Laptop Repairs</li>
+          <li>Mobile Repairs</li>
+          <li>Printer Repairs</li>
+          <li>Diagnostics & Upgrades</li>
+          <li>Data recovery</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© <span id="year"></span> Broadway Repairing Shop — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

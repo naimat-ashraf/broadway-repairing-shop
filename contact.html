@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Broadway Repairing Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-ico">🔧</div>
+        <div class="brand-text">
+          <div class="brand-title">Broadway Repairing Shop</div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top:28px;">
+    <h2>Contact Us</h2>
+    <p>Call us or send a message — we'll get back to you quickly.</p>
+
+    <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:16px;">
+      <div style="flex:1;min-width:280px;">
+        <h4>Visit us</h4>
+        <p>123 Broadway St.<br/>City, Country</p>
+
+        <h4>Call</h4>
+        <p>+92 300 0000000</p>
+
+        <h4>Email</h4>
+        <p>info@broadwayrepair.com</p>
+      </div>
+
+      <div style="flex:1;min-width:280px;">
+        <h4>Send a message</h4>
+        <form id="contactForm" style="display:flex;flex-direction:column;gap:10px">
+          <input name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #ddd"/>
+          <input name="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid #ddd"/>
+          <textarea name="message" placeholder="Message" rows="4" required style="padding:10px;border-radius:8px;border:1px solid #ddd"></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+        <p id="sentMsg" style="display:none;color:green;margin-top:10px">Message sent (demo only)</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner" style="justify-content:center">
+      <div class="footer-col">
+        <h3>Broadway Repairing Shop</h3>
+        <p>© <span id="year2"></span></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year2').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    // demo behavior only; hook up to backend if needed
+    document.getElementById('sentMsg').style.display = 'block';
+    setTimeout(()=>{ document.getElementById('sentMsg').style.display='none'; }, 3000);
+    this.reset();
+  });
+</script>
+</body>
+</html>
